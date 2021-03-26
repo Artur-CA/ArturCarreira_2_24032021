@@ -1,0 +1,254 @@
+/***************** GLOBAL STYLE **************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #0065fc;
+  transform: scale(1.02);
+}
+
+h2 {
+  font-size: 22px;
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.global-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/********************* HEADER *******************/
+
+/*NAV*/
+
+header {
+  margin: 25px;
+  padding: 25px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  min-width: 280px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+.menu-container {
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.signin {
+  display: flex;
+  padding: 0 20px;
+  margin-right: 40px;
+}
+
+.signin a {
+  padding: 0 20px;
+  font-weight: bold;
+  color: #0065fc;
+}
+
+.item {
+  padding: 63px 20px 10px 20px;
+}
+
+.item:hover {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+}
+
+.main-nav .signin {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+/*TEXT*/
+
+.main-container {
+  position: relative;
+  top: 70px;
+}
+
+.main-container h1 {
+  font-size: 25px;
+}
+
+.main-container p {
+  margin-top: 20px;
+}
+
+/*SEARCH*/
+
+.search-container {
+  margin-top: 90px;
+}
+
+#search-map .gps {
+  background-color: #f2f2f2;
+  height: 50px;
+  width: 50px;
+  margin: 0px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#search-map .search-text {
+  position: relative;
+  right: 5px;
+  margin-right: 0px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #f2f2f2;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input::placeholder {
+  position: relative;
+  left: 10px;
+  color: #000;
+  font-family: "Raleway";
+}
+
+.search-text:focus {
+  outline: none;
+}
+
+#search-spot {
+  margin-left: -10px;
+  width: 110px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 50px;
+  background-color: #0065fc;
+  color: #fff;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
+#search-spot:focus {
+  outline: none;
+}
+
+#search-spot-min {
+  display: none;
+}
+
+/*FILTER*/
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.filter-container h1 {
+  font-size: 17px;
+}
+
+.filter-first {
+  display: flex;
+}
+
+.filter-criteria {
+  margin-left: 30px;
+  border: 3px solid #f2f2f2;
+  border-radius: 30px;
+  width: 170px;
+  height: 50px;
+}
+
+.filter-criteria:hover {
+  background: #deebff;
+  border: none;
+}
+
+.filter-criteria .filter-icons {
+  background-color: #deebff;
+  color: #0065fc;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.filter-criteria .filter-name {
+  text-decoration: none;
+  color: #000;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.family {
+  width: 145px;
+}
+
+.animal {
+  width: 220px;
+}
+
+/*INFOS*/
+
+.infos {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.infos .news {
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  text-align: center;
+  color: #0065fc;
+}
+
+.infos p {
+  margin-left: 15px;
+  font-size: 16px;
+}

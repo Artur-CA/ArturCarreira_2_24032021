@@ -1,0 +1,200 @@
+/*================= MEDIA QUERIES ===================*/
+/*===================================================*/
+/*DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+}
+
+/*========================================================================*/
+/*TABLETTE*/
+
+@media screen and (min-width: 765px) and (max-width: 1023px) {
+  #search-spot {
+    display: none;
+  }
+
+  #search-spot-min {
+    position: relative;
+    bottom: 50px;
+    left: 60%;
+    display: block;
+    background-color: #0065fc;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #search-map .search-text {
+    position: relative;
+    right: 5px;
+    margin-right: 0px;
+    width: 60%;
+    height: 50px;
+    border: 1px solid #f2f2f2;
+    font-size: 18px;
+  }
+
+  .search-icons {
+    color: #fff;
+    font-size: 15px;
+  }
+  .filter-criteria {
+    margin-bottom: 20px;
+  }
+
+  .animal {
+    margin-left: 75px;
+  }
+}
+
+/*========================================================================*/
+/*MOBILE*/
+
+@media screen and (max-width: 764px) {
+  header {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .main-container {
+    position: relative;
+    top: 0;
+  }
+
+  .main-nav .item:hover {
+    border-top: none;
+  }
+
+  nav ul li {
+    border-bottom: 2.5px solid #f2f2f2;
+    padding-bottom: 15px;
+  }
+
+  .menu-item {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
+
+  .menu-item:hover {
+    border-top: none;
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+  }
+
+  .menu-container {
+    display: block;
+  }
+
+  .signin {
+    margin-top: 30px;
+  }
+
+  .infos {
+    margin-top: 29px;
+  }
+
+  .global-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .search-container {
+    margin-top: 30px;
+  }
+
+  .filter-container {
+    display: inline-block;
+    margin-top: -20px;
+  }
+
+  .filter-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filter-criteria {
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .eco {
+    width: 160px;
+  }
+
+  .family {
+    margin-left: 10px;
+  }
+
+  .filter-name {
+    font-size: 13px;
+  }
+
+  .infos .news {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 10px;
+  }
+
+  #search-spot {
+    display: none;
+  }
+
+  #search-spot-min {
+    position: relative;
+    bottom: 50px;
+    left: 80%;
+    display: block;
+    background-color: #0065fc;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search-icons {
+    color: #fff;
+    font-size: 15px;
+  }
+
+  #search-map .search-text {
+    position: relative;
+    right: 5px;
+    margin-right: 0px;
+    width: 80%;
+    height: 50px;
+    border: 1px solid #f2f2f2;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .signin {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    bottom: 160px;
+    left: 60px;
+  }
+
+  .main-nav {
+    flex-grow: 1;
+    order: 3;
+    width: 100vw;
+    margin-left: -35px;
+    margin-right: -35px;
+    margin-bottom: 20px;
+  }
+
+  .main-nav li {
+    display: block;
+    margin-top: 35px;
+    margin-left: 0;
+  }
+}
