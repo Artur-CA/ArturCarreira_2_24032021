@@ -93,8 +93,8 @@
   #residence {
     display: flex;
     flex-direction: column-reverse;
-    align-items: normal;
   }
+
   .lodging {
     background-color: #fff;
     width: 100vw;
@@ -104,7 +104,7 @@
     width: 100vw;
     margin-bottom: 50px;
     margin-left: -40px;
-    padding: 0 50px;
+    padding: 30px 40px;
   }
 
   .aside-content {
@@ -263,7 +263,6 @@
   #residence {
     display: flex;
     flex-direction: column-reverse;
-    align-items: normal;
   }
 
   .lodging {
@@ -271,14 +270,17 @@
   }
 
   .lodging h2 {
-    margin-left: 20px;
+    padding-left: 15px;
   }
-
   .lodging-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;
+    margin-left: -10px;
+  }
+
+  .lodging-card {
+    width: 83vw;
+    margin-bottom: 10px;
   }
 
   #show {
@@ -287,13 +289,11 @@
 
   .aside {
     width: 100vw;
-    margin-bottom: 50px;
-    margin-left: -3px;
-    padding: 0 40px;
+    margin: 25px 0;
+    padding: 30px 40px;
   }
   .aside-content {
-    width: 100%;
-    margin-left: 0;
+    width: 97%;
   }
 
   .card-info {
