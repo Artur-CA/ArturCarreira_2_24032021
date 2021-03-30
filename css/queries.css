@@ -15,6 +15,34 @@
     padding-top: 5px;
     margin-left: 15px;
   }
+
+  .aside-title h2 {
+    font-size: 18px;
+  }
+
+  .aside-content {
+    width: 275px;
+    margin-left: 0;
+  }
+  .aside-card img {
+    width: 100px;
+  }
+  .card-info {
+    font-size: 0.7em;
+    margin-right: 20px;
+  }
+
+  .card-info h3 {
+    font-size: 1.3em;
+  }
+
+  .card-info p {
+    font-size: 1.2em;
+  }
+  .card-star-icons {
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
 }
 
 /***********************************************************************/
@@ -42,8 +70,8 @@
     display: block;
     background-color: #0065fc;
     height: 50px;
-    width: 50px;
-    border-radius: 10px;
+    width: 55px;
+    border-radius: 15px;
     line-height: 50px;
     border: none;
     cursor: pointer;
@@ -53,6 +81,7 @@
     color: #fff;
     font-size: 15px;
   }
+
   .filter-criteria {
     margin-bottom: 20px;
   }
@@ -68,6 +97,21 @@
   }
   .lodging {
     background-color: #fff;
+    width: 100vw;
+    margin-left: -40px;
+  }
+  .aside {
+    width: 100vw;
+    margin-bottom: 50px;
+    margin-left: -40px;
+  }
+
+  .aside-content {
+    width: 100%;
+  }
+
+  .card-info {
+    margin-left: 140px;
   }
 }
 
@@ -147,7 +191,7 @@
     position: relative;
     right: 5px;
     margin-right: 0px;
-    width: 80%;
+    width: 75%;
     height: 50px;
     border: 1px solid #f2f2f2;
     font-size: 18px;
@@ -161,7 +205,7 @@
     background-color: #0065fc;
     height: 50px;
     width: 50px;
-    border-radius: 10px;
+    border-radius: 15px;
     line-height: 50px;
     border: none;
     cursor: pointer;
@@ -223,7 +267,6 @@
 
   .lodging {
     background-color: #fff;
-    padding: 0;
   }
 
   .lodging h2 {
@@ -233,17 +276,26 @@
   .lodging-container {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    align-items: center;
     width: 100%;
-  }
-
-  .lodging-card {
-    flex: 0;
-    flex-direction: column;
+    align-items: center;
   }
 
   #show {
     margin-top: 25px;
+  }
+
+  .aside {
+    width: 100vw;
+    margin-bottom: 50px;
+    margin-left: -3px;
+  }
+  .aside-content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .card-info {
+    font-size: 15px;
+    margin-left: 150px;
   }
 }
