@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- HEAD -->
   <head>
     <meta charset="utf-8" />
     <title>
@@ -11,19 +12,24 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/queries.css" />   
+    <link rel="stylesheet" href="css/queries.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/b5a511abdc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/b5a511abdc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
+  <!-- BODY -->
   <body>
     <div class="global-container">
-
+      <!------------------------------ HEADER ----------------------->
       <header class="header">
+        <!-- NAV -->
         <nav class="navbar">
           <div class="logo">
             <img src="img/logo/Reservia.svg" alt="Logo Reservia" />
@@ -42,10 +48,14 @@
             </div>
           </div>
         </nav>
+
+        <!-- TEXT -->
         <div class="main-container">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
         </div>
+
+        <!-- SEARCH -->
         <div class="search-container">
           <div id="search-map">
             <i class="fas fa-map-marker-alt gps"></i>
@@ -60,6 +70,8 @@
             </button>
           </div>
         </div>
+
+        <!-- FILTER -->
         <div class="filter-container">
           <h1>Filtres</h1>
           <div class="filter-first">
@@ -81,15 +93,18 @@
             ><a href="#" class="filter-name">Animaux autorisés</a>
           </div>
         </div>
+
+        <!-- INFOS -->
         <div class="infos">
           <i class="fas fa-info news"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </header>
 
+      <!----------------------- RESIDENCE SECTION -------------------------->
       <main class="main">
         <section id="residence">
-
+          <!-- LODGING -->
           <div class="lodging">
             <h2>Hébergements à Marseille</h2>
             <div class="lodging-container">
@@ -151,7 +166,7 @@
                 />
                 <div class="lodging-info">
                   <h3>Hôtel de la mer</h3>
-                  <p>Nuit à partir de <span>46 €</span=></p>
+                  <p>Nuit à partir de <span>46 €</span></p>
                 </div>
                 <div class="star-icons">
                   <i class="fas fa-star full"></i>
@@ -196,12 +211,13 @@
                 </div>
               </a>
             </div>
-            
+
             <div id="show">
               <a href="#">Afficher plus</a>
             </div>
           </div>
 
+          <!-- ASIDE -->
           <aside class="aside">
             <div class="aside-title">
               <h2>Les plus populaires</h2>
@@ -215,9 +231,7 @@
                     alt="Hotel le soleil du matin"
                   />
                   <div class="card-info">
-                    <h3>
-                      Hôtel Le Soleil du matin
-                    </h3>
+                    <h3>Hôtel Le Soleil du matin</h3>
                     <p>Nuit à partir de 128 €</p>
                     <div class="card-star-icons">
                       <i class="fas fa-star full"></i>
@@ -258,9 +272,7 @@
                     alt="Hôtel Tout bleu et Blanc"
                   />
                   <div class="card-info">
-                    <h3>
-                      Hôtel Tout bleu et Blanc
-                    </h3>
+                    <h3>Hôtel Tout bleu et Blanc</h3>
                     <p>Nuit à partir de 68 €</p>
                     <div class="card-star-icons">
                       <i class="fas fa-star full"></i>
@@ -275,9 +287,41 @@
             </div>
           </aside>
         </section>
-      </main>
 
-    <footer>
-    </footer>
+        <!---------------------- ACTIVITIES SECTION ----------------------->
+        <section id="activities">
+          <h2>Activités à Marseille</h2>
+          <div class="activities-list">
+            <a class="activity activity1">
+              <div class="picture"></div>
+              <h6 class="activity-info">Vieux Port</h6>
+            </a>
+            <a class="activity activity2">
+              <div class="picture"></div>
+              <h6 class="activity-info">Fort de Pomègues</h6>
+            </a>
+            <a class="activity activity3">
+              <div class="picture"></div>
+              <h6 class="activity-info">Îles du Frioul</h6>
+            </a>
+            <a class="activity activity4">
+              <div class="picture"></div>
+              <h6 class="activity-info">Parc National des Calanques</h6>
+            </a>
+            <a class="activity activity5">
+              <div class="picture"></div>
+              <h6 class="activity-info">Note-Dame-de-la-Garde</h6>
+            </a>
+            <a class="activity activity6">
+              <div class="picture"></div>
+              <h6 class="activity-info">Parc Longchamp</h6>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!----------------------------- FOOTER --------------------------------->
+    <footer></footer>
   </body>
 </html>

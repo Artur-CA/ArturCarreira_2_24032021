@@ -1,4 +1,4 @@
-/***************** GLOBAL STYLE **************/
+/*========== GLOBAL STYLE ==========*/
 
 * {
   box-sizing: border-box;
@@ -15,10 +15,6 @@ a:hover {
   color: #0065fc;
 }
 
-h2 {
-  font-size: 22px;
-}
-
 html,
 body {
   font-family: "Raleway", sans-serif;
@@ -27,13 +23,11 @@ body {
 .global-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
-/********************* HEADER *******************/
+/*************************** HEADER **************************/
 
-/*NAV*/
+/* NAV */
 
 header {
   margin: 25px;
@@ -63,12 +57,6 @@ header {
   list-style: none;
 }
 
-.signin {
-  display: flex;
-  padding: 0 20px;
-  margin-right: 40px;
-}
-
 .signin a {
   padding: 0 20px;
   font-weight: bold;
@@ -84,12 +72,7 @@ header {
   color: #0065fc;
 }
 
-.main-nav .signin {
-  color: #0065fc;
-  font-weight: bold;
-}
-
-/*TEXT*/
+/* TEXT */
 
 .main-container {
   position: relative;
@@ -104,7 +87,7 @@ header {
   margin-top: 20px;
 }
 
-/*SEARCH*/
+/* SEARCH */
 
 .search-container {
   margin-top: 90px;
@@ -171,7 +154,7 @@ input::-moz-placeholder {
   display: none;
 }
 
-/*FILTER*/
+/* FILTER */
 
 .filter-container {
   display: flex;
@@ -228,7 +211,7 @@ input::-moz-placeholder {
   width: 220px;
 }
 
-/*INFOS*/
+/* INFOS */
 
 .infos {
   display: flex;
@@ -251,12 +234,9 @@ input::-moz-placeholder {
   font-size: 16px;
 }
 
-/********************* RESIDENCE SECTION ***********************/
-
-/*LODGING*/
+/************************* RESIDENCE SECTION ***********************/
 
 main {
-  margin: 0 auto;
   padding: 30px;
 }
 
@@ -264,6 +244,8 @@ main {
   display: flex;
   align-items: stretch;
 }
+
+/* LODGING */
 
 .lodging {
   background-color: #f2f2f2;
@@ -276,6 +258,7 @@ main {
 
 .lodging h2 {
   padding-left: 20px;
+  font-size: 22px;
 }
 
 .lodging-container {
@@ -343,7 +326,8 @@ main {
   color: #000;
   font-weight: bold;
 }
-/*======== ASIDE ==============*/
+
+/* ASIDE */
 
 .aside {
   height: 633px;
@@ -359,8 +343,8 @@ main {
   justify-content: space-between;
 }
 
-.aside-title h1 {
-  font-size: 20px;
+.aside-title h2 {
+  font-size: 22px;
 }
 
 .symbol {
@@ -407,3 +391,97 @@ main {
   margin-top: 40px;
   font-size: 12px;
 }
+
+/********************** ACTIVITIES SECTION *********************/
+
+#activities {
+  margin-right: -1%;
+}
+
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 470px;
+  margin-bottom: 40px;
+}
+
+#activities h2 {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.activity {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 15px 15px;
+  box-shadow: 0 0 7px 4px #b1b1b14b;
+}
+
+.picture {
+  flex: 1;
+  border-radius: 15px 15px 0 0;
+}
+
+.activity h6 {
+  font-size: 1rem;
+  margin: 17px;
+}
+
+.activity2 {
+  flex-basis: 55%;
+}
+
+.activity3 {
+  flex-basis: 38%;
+}
+
+.activity5 {
+  flex-basis: 45%;
+}
+
+.activity6 {
+  flex-basis: 48%;
+}
+
+.activity1 .picture {
+  background-image: url("../img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activity2 .picture {
+  background-image: url("../img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activity3 .picture {
+  background-image: url("../img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activity4 .picture {
+  background-image: url("../img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activity5 .picture {
+  background-image: url("../img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activity6 .picture {
+  background-image: url("../img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/************************** FOOTER *************************/

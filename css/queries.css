@@ -1,9 +1,9 @@
-/*MEDIA QUERIES*/
+/* MEDIA QUERIES */
 
-/*********************************************************************/
-/*DESKTOP*/
+/*============================== DESKTOP ==================================*/
 
 @media screen and (min-width: 1024px) {
+  /* LODGING */
   .lodging-info h3 {
     font-size: 13px;
     margin-left: 15px;
@@ -16,6 +16,7 @@
     margin-left: 15px;
   }
 
+  /* ASIDE */
   .aside-title h2 {
     font-size: 18px;
   }
@@ -39,16 +40,17 @@
   .card-info p {
     font-size: 1.2em;
   }
+
   .card-star-icons {
     margin-bottom: 0;
     margin-top: 40px;
   }
 }
 
-/***********************************************************************/
-/*TABLETTE*/
+/*============================== TABLETTE ================================*/
 
 @media screen and (min-width: 765px) and (max-width: 1023px) {
+  /* SEARCH */
   #search-map .search-text {
     position: relative;
     right: 5px;
@@ -82,6 +84,7 @@
     font-size: 15px;
   }
 
+  /* FILTER */
   .filter-criteria {
     margin-bottom: 20px;
   }
@@ -90,16 +93,20 @@
     margin-left: 75px;
   }
 
+  /* RESIDENCE SECTION */
   #residence {
     display: flex;
     flex-direction: column-reverse;
   }
 
+  /* LODGING */
   .lodging {
     background-color: #fff;
     width: 100vw;
     margin-left: -40px;
   }
+
+  /* ASIDE */
   .aside {
     width: 100vw;
     margin-bottom: 50px;
@@ -114,22 +121,29 @@
   .card-info {
     margin-left: 140px;
   }
+
+  /* ACTIVITIES SECTION */
+  #activities {
+    margin-right: -3%;
+  }
 }
 
-/************************************************************************/
-/*MOBILE*/
+/*================================= MOBILE================================*/
 
 @media screen and (max-width: 764px) {
+  /* BODY */
   .global-container {
     padding-left: 0;
     padding-right: 0;
   }
 
+  /* HEADER */
   header {
     margin: 15px;
     padding: 15px;
   }
 
+  /* NAV */
   .menu-container {
     display: block;
   }
@@ -171,15 +185,16 @@
     flex-direction: row-reverse;
     position: relative;
     bottom: 160px;
-    left: 60px;
     margin-top: 30px;
   }
 
+  /* TEXT */
   .main-container {
     position: relative;
     top: 0;
   }
 
+  /* SEARCH */
   .search-container {
     margin-top: 30px;
   }
@@ -217,6 +232,7 @@
     font-size: 15px;
   }
 
+  /* FILTER */
   .filter-container {
     display: inline-block;
     margin-top: -20px;
@@ -245,6 +261,7 @@
     font-size: 13px;
   }
 
+  /* INFOS */
   .infos {
     margin-top: 29px;
   }
@@ -256,10 +273,12 @@
     font-size: 10px;
   }
 
+  /* RESIDENCE SECTION */
   .main {
     padding: 0;
   }
 
+  /* LODGING */
   #residence {
     display: flex;
     flex-direction: column-reverse;
@@ -270,7 +289,7 @@
   }
 
   .lodging h2 {
-    padding-left: 15px;
+    padding-left: 7px;
   }
   .lodging-container {
     display: flex;
@@ -287,6 +306,7 @@
     margin-top: 25px;
   }
 
+  /* ASIDE */
   .aside {
     width: 100vw;
     margin: 25px 0;
@@ -299,5 +319,28 @@
   .card-info {
     font-size: 15px;
     margin-left: 150px;
+  }
+
+  /* ACTIVITIES SECTION */
+  .activities-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 35px;
+    align-items: center;
+    height: 80rem;
+  }
+
+  #activities h2 {
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .activity {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 15px;
+    margin: 15px;
   }
 }
