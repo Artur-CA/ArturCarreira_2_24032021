@@ -1,9 +1,10 @@
-/***************** GLOBAL STYLE **************/
+/*========== GLOBAL STYLE ==========*/
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 a {
@@ -13,11 +14,6 @@ a {
 
 a:hover {
   color: #0065fc;
-  transform: scale(1.02);
-}
-
-h2 {
-  font-size: 22px;
 }
 
 html,
@@ -28,17 +24,15 @@ body {
 .global-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
-/********************* HEADER *******************/
+/*************************** HEADER **************************/
 
-/*NAV*/
+/* NAV */
 
 header {
-  margin: 25px;
-  padding: 25px;
+  margin: 25px 15px 0 15px;
+  padding: 15px 20px 0 20px;
 }
 
 .navbar {
@@ -61,18 +55,6 @@ header {
 
 .main-nav {
   display: flex;
-  list-style: none;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: #000;
-}
-
-.signin {
-  display: flex;
-  padding: 0 20px;
-  margin-right: 40px;
 }
 
 .signin a {
@@ -82,7 +64,7 @@ header {
 }
 
 .item {
-  padding: 63px 20px 10px 20px;
+  padding: 53px 20px 10px 20px;
 }
 
 .item:hover {
@@ -90,12 +72,7 @@ header {
   color: #0065fc;
 }
 
-.main-nav .signin {
-  color: #0065fc;
-  font-weight: bold;
-}
-
-/*TEXT*/
+/* TEXT */
 
 .main-container {
   position: relative;
@@ -110,7 +87,7 @@ header {
   margin-top: 20px;
 }
 
-/*SEARCH*/
+/* SEARCH */
 
 .search-container {
   margin-top: 90px;
@@ -137,13 +114,17 @@ header {
   border: 1px solid #f2f2f2;
   font-size: 18px;
   font-weight: bold;
+  padding-left: 10px;
 }
 
 input::placeholder {
   position: relative;
-  left: 10px;
-  color: #000;
+  color: black;
   font-family: "Raleway";
+}
+
+input::-moz-placeholder {
+  opacity: 1;
 }
 
 .search-text:focus {
@@ -152,7 +133,7 @@ input::placeholder {
 
 #search-spot {
   margin-left: -10px;
-  width: 110px;
+  width: 120px;
   height: 50px;
   font-size: 16px;
   font-weight: bold;
@@ -173,7 +154,7 @@ input::placeholder {
   display: none;
 }
 
-/*FILTER*/
+/* FILTER */
 
 .filter-container {
   display: flex;
@@ -201,17 +182,18 @@ input::placeholder {
 
 .filter-criteria:hover {
   background: #deebff;
-  border: none;
+  border-color: #deebff;
 }
 
 .filter-criteria .filter-icons {
   background-color: #deebff;
   color: #0065fc;
-  height: 45px;
-  width: 45px;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
   text-align: center;
   padding-top: 15px;
+  margin: -2px 0 0 -3px;
 }
 
 .filter-criteria .filter-name {
@@ -230,7 +212,7 @@ input::placeholder {
   width: 220px;
 }
 
-/*INFOS*/
+/* INFOS */
 
 .infos {
   display: flex;
@@ -251,4 +233,276 @@ input::placeholder {
 .infos p {
   margin-left: 15px;
   font-size: 16px;
+}
+
+/************************* RESIDENCE SECTION ***********************/
+
+main {
+  padding: 30px;
+}
+
+#residence {
+  display: flex;
+  align-items: stretch;
+}
+
+/* LODGING */
+
+.lodging {
+  background-color: #f2f2f2;
+  height: auto;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.lodging h2 {
+  padding-left: 20px;
+  font-size: 22px;
+}
+
+.lodging-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 20px;
+  padding-top: 20px;
+}
+
+.lodging-card {
+  flex: 30%;
+  margin-top: 25px;
+  height: 210px;
+  margin-left: 17px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 6px 3px #7a7a7a4b;
+}
+
+.lodging-card img {
+  height: 115px;
+  width: 100%;
+  margin: 5px;
+  padding-right: 10px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 20px;
+}
+
+.lodging-info h3 {
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.lodging-info p {
+  font-size: 15px;
+  padding-top: 5px;
+  margin-left: 15px;
+}
+
+.star-icons {
+  display: inline-block;
+  position: relative;
+  left: 15px;
+  font-size: 12px;
+}
+
+.full {
+  color: #0065fc;
+}
+
+.empty {
+  color: #f2f2f2;
+}
+
+#show {
+  margin-left: 25px;
+  margin-top: 50px;
+}
+
+#show a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ASIDE */
+
+.aside {
+  height: 633px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 0 15px 0 15px;
+  padding: 25px 15px 0 15px;
+}
+
+.aside-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aside-title h2 {
+  font-size: 22px;
+}
+
+.symbol {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.aside-content {
+  width: 340px;
+  height: 145px;
+  background-color: #fff;
+  box-shadow: 0 0 7px 4px #b1b1b14b;
+  border-radius: 15px;
+  margin-top: 35px;
+  margin-left: -5px;
+}
+
+.aside-card img {
+  object-fit: cover;
+  width: 125px;
+  height: 135px;
+  margin: 5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: -125px;
+  margin-left: 120px;
+}
+
+.card-info h3 {
+  font-size: 16px;
+}
+
+.card-info p {
+  font-size: 15px;
+  padding-top: 7px;
+}
+
+.card-star-icons {
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+/********************** ACTIVITIES SECTION *********************/
+
+#activities {
+  margin-right: -1%;
+}
+
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 470px;
+  margin-bottom: 30px;
+}
+
+#activities h2 {
+  font-size: 22px;
+  margin: 40px 0;
+}
+
+.activity {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 15px 15px;
+  box-shadow: 0 0 7px 4px #b1b1b14b;
+}
+
+.picture {
+  flex: 1;
+  border-radius: 15px 15px 0 0;
+}
+
+.activity h6 {
+  font-size: 1rem;
+  margin: 17px;
+}
+
+.activity2 {
+  flex-basis: 55%;
+}
+
+.activity3 {
+  flex-basis: 38%;
+}
+
+.activity5 {
+  flex-basis: 45%;
+}
+
+.activity6 {
+  flex-basis: 48%;
+}
+
+.activity1 .picture {
+  background-image: url("../img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activity2 .picture {
+  background-image: url("../img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activity3 .picture {
+  background-image: url("../img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activity4 .picture {
+  background-image: url("../img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activity5 .picture {
+  background-image: url("../img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activity6 .picture {
+  background-image: url("../img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/************************** FOOTER *************************/
+
+footer {
+  display: flex;
+  background-color: #f2f2f2;
+  height: 200px;
+}
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.footer-nav {
+  flex: 1;
+  padding-right: 10px;
+  line-height: 30px;
 }
