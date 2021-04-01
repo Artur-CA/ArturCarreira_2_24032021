@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 a {
@@ -30,8 +31,8 @@ body {
 /* NAV */
 
 header {
-  margin: 25px;
-  padding: 25px;
+  margin: 25px 15px 0 15px;
+  padding: 15px 20px 0 20px;
 }
 
 .navbar {
@@ -54,7 +55,6 @@ header {
 
 .main-nav {
   display: flex;
-  list-style: none;
 }
 
 .signin a {
@@ -64,7 +64,7 @@ header {
 }
 
 .item {
-  padding: 63px 20px 10px 20px;
+  padding: 53px 20px 10px 20px;
 }
 
 .item:hover {
@@ -133,7 +133,7 @@ input::-moz-placeholder {
 
 #search-spot {
   margin-left: -10px;
-  width: 110px;
+  width: 120px;
   height: 50px;
   font-size: 16px;
   font-weight: bold;
@@ -182,17 +182,18 @@ input::-moz-placeholder {
 
 .filter-criteria:hover {
   background: #deebff;
-  border: none;
+  border-color: #deebff;
 }
 
 .filter-criteria .filter-icons {
   background-color: #deebff;
   color: #0065fc;
-  height: 45px;
-  width: 45px;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
   text-align: center;
   padding-top: 15px;
+  margin: -2px 0 0 -3px;
 }
 
 .filter-criteria .filter-name {
@@ -404,13 +405,12 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 470px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 #activities h2 {
   font-size: 22px;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin: 40px 0;
 }
 
 .activity {
@@ -485,3 +485,24 @@ main {
 }
 
 /************************** FOOTER *************************/
+
+footer {
+  display: flex;
+  background-color: #f2f2f2;
+  height: 200px;
+}
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.footer-nav {
+  flex: 1;
+  padding-right: 10px;
+  line-height: 30px;
+}
